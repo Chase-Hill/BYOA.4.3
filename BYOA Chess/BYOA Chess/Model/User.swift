@@ -46,7 +46,10 @@ extension User {
               let username = dictionary[Keys.username.rawValue] as? String,
               let followers = dictionary[Keys.followers.rawValue] as? Int,
               let location = dictionary[Keys.location.rawValue] as? String,
-              let league = dictionary[Keys.league.rawValue] as? String else { return nil }
+              let league = dictionary[Keys.league.rawValue] as? String else {
+              print("\(#file)\(#line)")
+              return nil
+        }
         
         self.init(avatar: avatar, name: name, username: username, followers: followers, location: location, league: league)
     }
