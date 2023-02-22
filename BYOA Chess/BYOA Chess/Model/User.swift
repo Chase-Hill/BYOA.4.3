@@ -10,14 +10,14 @@ import UIKit
 
 class User {
     
-    let avatar: UIImage
+    let avatar: String
     let name: String
     let username: String
     let followers: Int
     let location: String
     let league: String
     
-    init(avatar: UIImage, name: String, username: String, followers: Int, location: String, league: String) {
+    init(avatar: String, name: String, username: String, followers: Int, location: String, league: String) {
         
         self.avatar = avatar
         self.name = name
@@ -41,7 +41,7 @@ extension User {
     
     convenience init?(dictionary: [String : Any]) {
         
-        guard let avatar = dictionary[Keys.avatar.rawValue] as? UIImage,
+        guard let avatar = dictionary[Keys.avatar.rawValue] as? String,
               let name = dictionary[Keys.name.rawValue] as? String,
               let username = dictionary[Keys.username.rawValue] as? String,
               let followers = dictionary[Keys.followers.rawValue] as? Int,

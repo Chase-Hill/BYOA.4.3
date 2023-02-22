@@ -75,6 +75,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="06r-4a-3fw" id="JL6-jC-G8v"/>
                         <outlet property="userAvatarImage" destination="bXm-5c-kD8" id="Vuy-a9-ArU"/>
                         <outlet property="userFollowerLabel" destination="KY1-rc-gfT" id="cyq-sZ-f5n"/>
                         <outlet property="userLeagueLabel" destination="fkX-W9-Wjx" id="yeM-EM-gdW"/>
